@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>Úvodní strana</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1-home">Vítejte na úvodní stránce</h1>
+        <h2>Zadejte prosím klíčové slovo, které si přejete vyhledat</h2>
+
+        <form  class="input-form" action="result">
+            <input type="text" name="searchKeyword" id="let"><br>
+            <input class="btn-home" type="Submit" value="Vyhledat">
+        </form>
+    </div>
+</body>
+</html>
